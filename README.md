@@ -17,7 +17,7 @@ To start the backend run:
 mvn spring-boot:run
 ```
 
-To start the React app
+To start the React app:
 ```bash
 cd src/main/frontend
 yarn install
