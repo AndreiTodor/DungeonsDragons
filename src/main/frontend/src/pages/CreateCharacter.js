@@ -12,6 +12,15 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         width: '40%',
+        [theme.breakpoints.down('md')]: {
+            width: '50%',
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '80%',
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '100%',
+        },
     },
     marginBottom: {
         marginBottom: 10,

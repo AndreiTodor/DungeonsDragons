@@ -8,6 +8,14 @@ const useStyles = makeStyles(theme => ({
     title: {
         marginBottom: 60,
     },
+    pageContent: {
+        display: 'flex',
+        flexDirection: 'column',
+        width: '50%',
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+        },
+    },
 }));
 
 const CharactersList = () => {
@@ -26,14 +34,18 @@ const CharactersList = () => {
     }, []);
 
     return (
-        <Box margin={2} display="flex" flexDirection="column" width="50%">
+        <Box margin={2} display="flex" flexDirection="column">
             <Typography variant="h3" className={classes.title}>
                 Characters List
             </Typography>
-            {characters.map(c => <CharacterInfo character={c} />)}
-            <Button variant="contained" onClick={() => navigate('/create-character')}>
-                New character
-            </Button>
+            <Box className={classes.pageContent}>
+                {characters.map(c => (
+                    <CharacterInfo character={c} />
+                ))}
+                <Button variant="contained" onClick={() => navigate('/create-character')}>
+                    New character
+                </Button>
+            </Box>
         </Box>
     );
 };
