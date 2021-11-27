@@ -3,7 +3,7 @@ jdk: openjdk15
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_API_KEY
+    secure: AwB2aRDK4AfU1bOXO4pZ6+a55EiRelxBAXeXK6LhrYzt9mSBD9NuDZLgcr/Z6ApllJs0QhV9mdwQAVXRVgno5UZIt1W5ITuAIV1Q8lhoxF+DCGVUyfrP42t/ZU8CKLyh8FpXAfonA09s/hVqnnC47+lHNNcSvER9wQcyU/vYEuRO7Ql98orpSrEnWPWhEjQmMQIs6TsgtkHcl3wCT3QgXrRkg+gbFF+GOd4pAMhUGwhjXpKLrkaApdMl91A2VN15GmC91/oLx+OtGy4o6L1wP7fDePOc9Wcsvta1hsasKXqMPX9tmUbdy7djEQOCzFLhEPDawmEYvwrLn/3MW8A+ohcTekDXLMDjdpb9EoQwDajqNwhOEcZ7X91DVF46j3SnWbHo4eXwUdkCndMQDNqSb7RRz4ORhLvp6hYLMIaG9ETLrXmveCtkv/bnXHVChsuSamLk3JC4vLUCHNtqyhKRJMBrCue+EBI7dDAFx7SObzyaQWxts7+JbHf4zkMCe/uLUuItq3Ppe9dyVhpXndrY8cU77BIgoAjhoHgF4X0Xy/M7Tl0gSOpwxQ9Iu56otmi43LD5LbAuEql/iexpW4WOkV5zZJhKurkBxsXs1OHwL0ZA2/cVdyQ0+dw1KyMNyZzWaxwScSPJC1f9qG7dsfTknBknJ6EYlnVPWv3yNb7aT1I=
   app: dungeons-dragons-character
 before_install:
-  - chmod +x ./mvnw
+- chmod +x ./mvnw
