@@ -26,7 +26,7 @@ yarn start
 
 The app is available at `http://localhost:3000`
 
-### Run on the same server
+### Serve frontend from the same server
 
 To serve the React app from the Spring Boot server first build the server:
 ```bash
