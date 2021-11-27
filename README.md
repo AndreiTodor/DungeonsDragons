@@ -28,7 +28,7 @@ The app is available at `http://localhost:3000`
 
 ### Run on the same server
 
-To serve the React app from the Spring Boot server run first build the server:
+To serve the React app from the Spring Boot server first build the server:
 ```bash
 mvn clean install
 ```
